@@ -7,3 +7,8 @@ streamlit>=1.28
 joblib>=1.3
 # Optional (for LSTM)
 tensorflow>=2.13
+streamlit
+pandas
+numpy
+plotly
+scikit-learn
