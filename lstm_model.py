@@ -4,11 +4,11 @@ Captures temporal dependencies in attenuation and PMD sequences.
 Supports quantile-based uncertainty estimation.
 """
 
-import numpy as np
-import os
-import warnings
-warnings.filterwarnings("ignore")
-
+from generate_data import generate_fiber_dataset
+from preprocessing import (
+    clean_series, add_features, compute_health_index, THETA_1, THETA_2
+)
+from rf_model import FiberRFModel
 # Try importing TensorFlow; gracefully fall back if unavailable
 try:
     import tensorflow as tf
