@@ -14,7 +14,7 @@ python train_evaluate.py
 python train_evaluate.py --no-lstm
 
 # Launch monitoring dashboard
-streamlit run dashboard/app.py
+streamlit run app.py
 ```
 
 ## Project Structure
